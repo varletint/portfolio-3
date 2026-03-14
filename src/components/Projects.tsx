@@ -28,38 +28,61 @@ const projects: Project[] = [
 
 const Projects = () => {
   return (
-    <section id='projects' className='py-24 px-6 bg-cream'>
-      <div className='max-w-5xl mx-auto'>
-        <p className='text-sm font-medium text-terracotta tracking-widest uppercase mb-3'>
+    <section
+      id='projects'
+      className='py-24 px-6 relative notebook-paper border-t border-border/40'>
+      {/* Vertical Red Margin Line */}
+      <div className='absolute left-8 md:left-[15%] top-0 bottom-0 w-[2px] bg-terracotta/30 z-0 pointer-events-none' />
+
+      <div className='max-w-4xl mx-auto relative z-10 pl-6 md:pl-0'>
+        <p className='text-sm font-medium text-terracotta tracking-widest uppercase mb-4 mt-[6px] inline-block px-1'>
           Projects
         </p>
-        <h2 className='text-3xl md:text-4xl font-bold text-espresso mb-12'>
+        <br />
+        <h2 className='text-3xl md:text-4xl font-bold text-espresso mb-12 inline-block px-1'>
           Things I've built
         </h2>
-        <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
-          {projects.map((project) => (
-            <div
-              key={project.title}
-              className='bg-beige border border-border p-6 flex flex-col justify-between'>
-              <div>
-                <h3 className='text-xl font-semibold text-espresso mb-3'>
-                  {project.title}
-                </h3>
-                <p className='text-sm text-espresso-light leading-relaxed mb-5'>
-                  {project.description}
-                </p>
+        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10 relative z-20 pt-4'>
+          {projects.map((project, index) => {
+            // Cycle through slight rotations to look naturally placed
+            const rotations = [
+              "rotate-1",
+              "-rotate-2",
+              "rotate-2",
+              "-rotate-1",
+            ];
+            const rotation = rotations[index % rotations.length];
+            // Cycle through subtle pastel yellow/beige colors
+            const colors = ["bg-[#fefce8]", "bg-[#fef9c3]", "bg-[#fffbeb]"];
+            const bgColor = colors[index % colors.length];
+
+            return (
+              <div
+                key={project.title}
+                className={`relative ${bgColor} p-6 flex flex-col justify-between shadow-[2px_4px_12px_rgba(0,0,0,0.1)] hover:scale-105 hover:shadow-[4px_8px_24px_rgba(0,0,0,0.15)] hover:z-30 transition-all duration-300 ${rotation}`}>
+                {/* Simulated Tape */}
+                <div className='absolute -top-3 left-1/2 -translate-x-1/2 w-14 h-6 bg-espresso backdrop-blur-sm shadow-sm opacity-80 border-t border-b border-white/40 -rotate-1 z-10'></div>
+
+                <div className='mt-2'>
+                  <h3 className='text-xl font-bold text-espresso mb-3'>
+                    {project.title}
+                  </h3>
+                  <p className='text-sm text-espresso-light leading-relaxed mb-5'>
+                    {project.description}
+                  </p>
+                </div>
+                <div className='flex flex-wrap gap-2 mt-auto pt-2'>
+                  {project.tech.map((t) => (
+                    <span
+                      key={t}
+                      className='text-xs font-semibold text-terracotta border border-terracotta/20 bg-terracotta/5 px-2 py-1'>
+                      {t}
+                    </span>
+                  ))}
+                </div>
               </div>
-              <div className='flex flex-wrap gap-2'>
-                {project.tech.map((t) => (
-                  <span
-                    key={t}
-                    className='text-xs font-medium text-muted border border-border px-2.5 py-1'>
-                    {t}
-                  </span>
-                ))}
-              </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
