@@ -11,18 +11,21 @@ const projects: Project[] = [
     description:
       "A live audio streaming platform for mosques with Icecast integration, FFmpeg-powered auto-recording triggered by mount events, and Cloudflare R2 storage for session playback.",
     tech: ["Node.js", "TypeScript", "Icecast", "FFmpeg", "Cloudflare R2"],
+    link: "https://saamee.vercel.app",
   },
   {
     title: "Lookupss",
     description:
       "An ERP-style SaaS platform helping Nigerian businesses manage inventory, sales, and expenses with a focus on local market fit and scalability.",
     tech: ["React", "Next.js", "Node.js", "MongoDB", "TypeScript"],
+    link: "https://lookupss.vercel.app",
   },
   {
     title: "Getick",
     description:
       "A ticketing system supporting Paystack split payments and automated financial reconciliation for events, built for the Nigerian market.",
     tech: ["Node.js", "TypeScript", "Paystack", "MongoDB", "Express"],
+    link: "https://getick.vercel.app",
   },
 ];
 
@@ -71,14 +74,38 @@ const Projects = () => {
                     {project.description}
                   </p>
                 </div>
-                <div className='flex flex-wrap gap-2 mt-auto pt-2'>
-                  {project.tech.map((t) => (
-                    <span
-                      key={t}
-                      className='text-xs font-semibold text-terracotta border border-terracotta/20 bg-terracotta/5 px-2 py-1'>
-                      {t}
-                    </span>
-                  ))}
+                <div className='flex flex-wrap items-center gap-2 mt-auto pt-4'>
+                  <div className='flex flex-wrap gap-2'>
+                    {project.tech.map((t) => (
+                      <span
+                        key={t}
+                        className='text-xs font-semibold text-terracotta border border-terracotta/20 bg-terracotta/5 px-2 py-1'>
+                        {t}
+                      </span>
+                    ))}
+                  </div>
+                  {project.link && (
+                    <a
+                      href={project.link}
+                      target='_blank'
+                      rel='noopener noreferrer'
+                      className='ml-auto p-1.5 text-espresso hover:text-terracotta transition-all hover:scale-110 border border-espresso/10 rounded-sm'
+                      aria-label='Open Project'>
+                      <svg
+                        xmlns='http://www.w3.org/2000/svg'
+                        width='16'
+                        height='16'
+                        viewBox='0 0 24 24'
+                        fill='none'
+                        stroke='currentColor'
+                        strokeWidth='2.5'
+                        strokeLinecap='round'
+                        strokeLinejoin='round'>
+                        <path d='M7 7h10v10' />
+                        <path d='M7 17 17 7' />
+                      </svg>
+                    </a>
+                  )}
                 </div>
               </div>
             );
