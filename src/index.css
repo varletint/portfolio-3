@@ -9,7 +9,7 @@
   --color-terracotta-dark: #a85e38;
   --color-muted: #8a7e76;
   --color-border: #e0d6cc;
-  --font-sans: "DM Sans", sans-serif;
+  --font-sans: "Montserrat", sans-serif;
 }
 
 html {
@@ -33,4 +33,20 @@ body {
 ::selection {
   background-color: var(--color-terracotta);
   color: white;
+}
+
+.notebook-paper {
+  background-color: var(--color-beige);
+  background-image: repeating-linear-gradient(
+    transparent,
+    transparent 39px,
+    rgba(138, 126, 118, 0.25) 39px,
+    rgba(138, 126, 118, 0.25) 40px
+  );
+  background-attachment: local;
+}
+
+.desk-bg {
+  background-color: #8c6b5d;
+  background-image: radial-gradient(circle, transparent 20%, #5f4532 200%);
 }
