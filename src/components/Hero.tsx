@@ -6,7 +6,7 @@ const Hero = () => {
           Software Engineer
         </p>
         <h1 className='text-5xl md:text-7xl font-bold text-espresso leading-tight mb-6'>
-          Adam Abduljalil
+          Varletint
         </h1>
         <p className='text-lg md:text-xl text-espresso-light leading-relaxed max-w-2xl mx-auto mb-10'>
           Backend & full-stack engineer building scalable systems with Node.js,
