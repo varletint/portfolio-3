@@ -14,21 +14,25 @@ const Hero = () => {
         </h1>
         <div className='w-full'></div>
         <div className='text-xl md:text-2xl text-espresso-light leading-[40px] max-w-3xl mb-12 font-medium'>
-          <p className='bg-beige/80 inline shadow-[0_0_10px_2px_rgba(250,246,241,0.8)] px-1'>
+          <p className='inline shadow-[0_0_10px_2px_rgba(250,246,241,0.8)] px-1'>
             Backend & full-stack engineer building scalable systems with
             Node.js, TypeScript, React and MongoDB. Based in Nigeria.
           </p>
         </div>
 
-        <div className='flex flex-wrap items-center gap-6 mt-4 relative z-20'>
+        <div className='flex flex-wrap items-center gap-6 mt-6 relative z-20'>
           <a
             href='#projects'
-            className='inline-flex items-center justify-center px-8 py-3.5 bg-espresso text-beige text-sm font-bold tracking-widest uppercase hover:bg-espresso-light transition-all shadow-lg hover:-translate-y-1'>
+            className='relative inline-flex items-center justify-center px-8 py-3.5 bg-[#fefce8] text-espresso text-sm font-bold tracking-widest uppercase hover:scale-105 transition-all duration-300 shadow-[2px_4px_12px_rgba(0,0,0,0.1)] hover:shadow-[4px_8px_24px_rgba(0,0,0,0.15)] -rotate-1'>
+            {/* Simulated Tape */}
+            <div className='absolute -top-3 left-1/2 -translate-x-1/2 w-10 h-5 bg-espresso backdrop-blur-sm shadow-sm opacity-80 border-t border-b border-white/40 rotate-1 z-10'></div>
             View Projects
           </a>
           <a
             href='#contact'
-            className='inline-flex items-center justify-center px-8 py-3.5 border-2 border-espresso text-espresso text-sm font-bold tracking-widest uppercase hover:bg-espresso hover:text-beige transition-all bg-beige/80'>
+            className='relative inline-flex items-center justify-center px-8 py-3.5 bg-[#f0f9ff] text-espresso text-sm font-bold tracking-widest uppercase hover:scale-105 transition-all duration-300 shadow-[2px_4px_12px_rgba(0,0,0,0.1)] hover:shadow-[4px_8px_24px_rgba(0,0,0,0.15)] rotate-1'>
+            {/* Simulated Tape */}
+            <div className='absolute -top-3 left-1/2 -translate-x-1/2 w-10 h-5 bg-espresso backdrop-blur-sm shadow-sm opacity-80 border-t border-b border-white/40 -rotate-1 z-10'></div>
             Get in Touch
           </a>
         </div>
