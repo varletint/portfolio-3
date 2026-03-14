@@ -10,8 +10,8 @@ const About = () => {
         </h2>
         <div className='space-y-5 text-espresso-light leading-relaxed text-base md:text-lg'>
           <p>
-            I'm Adam Abduljalil, a software engineer from Nigeria with a Diploma
-            and B.Sc. in Computer Science from Ibrahim Badamasi Babangida
+            I'm Varletint, a software engineer from Nigeria with a Diploma and
+            B.Sc. in Computer Science from Ibrahim Badamasi Babangida
             University, Lapai.
           </p>
           <p>

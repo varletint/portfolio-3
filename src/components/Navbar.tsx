@@ -12,7 +12,7 @@ const Navbar = () => {
         <a
           href='#'
           className='text-lg font-semibold text-espresso tracking-tight'>
-          AA
+          V
         </a>
         <ul className='flex gap-8'>
           {links.map((link) => (
