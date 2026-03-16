@@ -23,18 +23,24 @@ const Hero = () => {
           <p className='inline shadow-[0_0_10px_2px_rgba(250,246,241,0.8)] px-1'>
             Systems-focused full-stack engineer building reliable, secure
             applications at scale. I work across Node.js, TypeScript, and React
-            to deliver end-to-end solutions — with a strong emphasis on clean
+            to deliver end-to-end solutions with a strong emphasis on clean
             architecture, data consistency, and performance. Based in Nigeria.
           </p>
+          <p className='inline shadow-[0_0_10px_2px_rgba(250,246,241,0.8)] px-1'>
+            Strong systems design fundamentals focused on reliable, secure
+            applications with clear service boundaries and data consistency.
+            Experienced in payment systems, e-commerce platforms, and business
+            management tools.
+          </p>
         </div>
-        <div className='text-base md:text-lg text-muted leading-[40px] max-w-3xl mb-12 font-medium'>
+        {/* <div className='text-base md:text-lg text-muted leading-[40px] max-w-3xl mb-12 font-medium'>
           <p className='inline shadow-[0_0_10px_2px_rgba(250,246,241,0.8)] px-1'>
             Strong systems design fundamentals — focused on reliable, secure
             applications with clear service boundaries and data consistency.
             Experienced in payment systems, e-commerce platforms, and business
             management tools.
           </p>
-        </div>
+        </div> */}
 
         <div className='flex flex-wrap items-center gap-6 mt-6 relative z-20'>
           <a
