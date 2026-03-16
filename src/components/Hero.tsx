@@ -21,8 +21,10 @@ const Hero = () => {
         <div className='w-full'></div>
         <div className='text-xl md:text-2xl text-espresso-light leading-[40px] max-w-3xl mb-6 font-medium'>
           <p className='inline shadow-[0_0_10px_2px_rgba(250,246,241,0.8)] px-1'>
-            Backend & full-stack engineer building scalable systems with
-            Node.js, TypeScript, React and MongoDB. Based in Nigeria.
+            Systems-focused full-stack engineer building reliable, secure
+            applications at scale. I work across Node.js, TypeScript, and React
+            to deliver end-to-end solutions — with a strong emphasis on clean
+            architecture, data consistency, and performance. Based in Nigeria.
           </p>
         </div>
         <div className='text-base md:text-lg text-muted leading-[40px] max-w-3xl mb-12 font-medium'>
