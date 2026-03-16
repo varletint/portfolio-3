@@ -21,6 +21,12 @@ const Contact = () => {
             challenges, or opportunities to build something impactful. Feel free
             to reach out.
           </p>
+          <div className='h-[40px]' aria-hidden='true'></div>
+          <p className='inline shadow-[0_0_10px_2px_rgba(250,246,241,0.8)] px-1'>
+            Whether it's systems architecture, payment integrations, e-commerce
+            platforms, or full-stack product builds — I'd love to connect and
+            explore how we can work together.
+          </p>
         </div>
 
         <div className='flex flex-col sm:flex-row flex-wrap items-start gap-8 md:gap-12 mt-4 relative z-20 pt-4'>
