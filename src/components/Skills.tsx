@@ -1,28 +1,43 @@
 const skillGroups = [
   {
-    label: "Languages & Runtime",
-    skills: ["TypeScript", "JavaScript", "Node.js"],
+    label: "Languages",
+    skills: ["TypeScript", "JavaScript"],
   },
   {
     label: "Frontend",
-    skills: ["React", "Next.js", "Tailwind CSS", "HTML/CSS"],
+    skills: ["React", "Next.js", "TailwindCSS", "Shadcn/UI", "HTML/CSS"],
   },
   {
     label: "Backend & APIs",
-    skills: ["Express", "REST APIs", "Event-Driven Architecture"],
+    skills: ["Node.js", "Express", "REST APIs", "JWT Authentication"],
   },
   {
-    label: "Databases & Caching",
-    skills: ["MongoDB", "Redis", "PostgreSQL"],
+    label: "Database",
+    skills: ["MongoDB", "Mongoose ODM"],
+  },
+  {
+    label: "System Design",
+    skills: ["RBAC", "Data Consistency", "Idempotency", "Concurrency Handling"],
   },
   {
     label: "Infrastructure & Tools",
-    skills: ["FFmpeg", "Icecast", "Cloudflare R2", "Git"],
+    skills: ["FFmpeg", "Icecast", "Cloudflare R2", "Redis", "Git"],
   },
   {
     label: "Payments & Integrations",
     skills: ["Paystack", "Split Payments"],
   },
+];
+
+const engineeringFocus = [
+  "System boundaries & API architecture",
+  "Component architecture & reusable UI patterns",
+  "Data consistency & transactional workflows",
+  "Responsive design & cross-browser compatibility",
+  "Idempotent operations & failure recovery",
+  "State management & performance optimization",
+  "Auth systems (JWT, RBAC, role separation)",
+  "Accessible UIs & modern design systems",
 ];
 
 const Skills = () => {
@@ -85,6 +100,31 @@ const Skills = () => {
               </div>
             );
           })}
+        </div>
+
+        {/* Engineering Focus Checklist */}
+        <div className='mt-20 relative z-20'>
+          <h3 className='text-2xl md:text-3xl font-bold text-espresso mb-10 inline-block px-1'>
+            Engineering Focus
+          </h3>
+
+          <div className='relative bg-[#fffbeb] p-8 md:p-10 shadow-[2px_4px_16px_rgba(0,0,0,0.1)] -rotate-[0.5deg]'>
+            {/* Simulated Tape */}
+            <div className='absolute -top-3 left-1/2 -translate-x-1/2 w-16 h-6 bg-espresso backdrop-blur-sm shadow-sm opacity-80 border-t border-b border-white/40 rotate-1 z-10'></div>
+
+            <ul className='grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-4 mt-2'>
+              {engineeringFocus.map((item, index) => (
+                <li
+                  key={index}
+                  className='flex items-start gap-3 text-espresso-light text-sm md:text-base leading-relaxed'>
+                  <span className='text-terracotta font-bold text-base mt-0.5 shrink-0'>
+                    ✓
+                  </span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
     </section>
