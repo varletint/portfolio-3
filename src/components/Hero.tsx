@@ -5,18 +5,32 @@ const Hero = () => {
       <div className='absolute left-8 md:left-[15%] top-0 bottom-0 w-[2px] bg-terracotta/30 z-0 pointer-events-none' />
 
       <div className='max-w-3xl mx-auto w-full relative z-10 pl-6 md:pl-0'>
-        <p className='text-sm md:text-base font-bold text-terracotta tracking-[0.2em] uppercase mb-4 mt-[6px] bg-beige/80 inline-block px-1'>
-          Software Engineer
-        </p>
+        <div className='flex flex-wrap items-baseline gap-x-3 gap-y-1 mb-4 mt-[6px]'>
+          <p className='text-sm md:text-base font-bold text-terracotta tracking-[0.2em] uppercase bg-beige/80 inline-block px-1'>
+            Software Engineer
+          </p>
+          <span className='text-espresso/30 text-sm hidden sm:inline'>•</span>
+          <p className='text-sm md:text-base font-bold text-terracotta-dark tracking-[0.2em] uppercase bg-beige/80 inline-block px-1'>
+            Fullstack Engineer
+          </p>
+        </div>
         <br />
         <h1 className='text-5xl md:text-[5rem] font-bold text-espresso leading-tight mb-8 mt-2 tracking-tight drop-shadow-sm bg-beige/80 inline-block px-1'>
           Varletint
         </h1>
         <div className='w-full'></div>
-        <div className='text-xl md:text-2xl text-espresso-light leading-[40px] max-w-3xl mb-12 font-medium'>
+        <div className='text-xl md:text-2xl text-espresso-light leading-[40px] max-w-3xl mb-6 font-medium'>
           <p className='inline shadow-[0_0_10px_2px_rgba(250,246,241,0.8)] px-1'>
             Backend & full-stack engineer building scalable systems with
             Node.js, TypeScript, React and MongoDB. Based in Nigeria.
+          </p>
+        </div>
+        <div className='text-base md:text-lg text-muted leading-[40px] max-w-3xl mb-12 font-medium'>
+          <p className='inline shadow-[0_0_10px_2px_rgba(250,246,241,0.8)] px-1'>
+            Strong systems design fundamentals — focused on reliable, secure
+            applications with clear service boundaries and data consistency.
+            Experienced in payment systems, e-commerce platforms, and business
+            management tools.
           </p>
         </div>
 
