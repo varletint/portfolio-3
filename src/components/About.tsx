@@ -36,6 +36,23 @@ const About = () => {
           </p>
           <div className='h-[40px]' aria-hidden='true'></div>
           <p className='  inline shadow-[0_0_10px_2px_rgba(250,246,241,0.8)] px-1'>
+            I care deeply about systems design — building applications with
+            clear service boundaries, enforcing data consistency, and designing
+            for reliability. Whether it's implementing RBAC-based access
+            control, handling concurrency safely, or ensuring idempotent
+            operations for payment flows, I approach every system with
+            production-grade discipline.
+          </p>
+          <div className='h-[40px]' aria-hidden='true'></div>
+          <p className='  inline shadow-[0_0_10px_2px_rgba(250,246,241,0.8)] px-1'>
+            My experience spans payment systems, e-commerce platforms, and
+            business management tools — domains where correctness and security
+            aren't optional. I'm focused on growing toward Systems Engineer and
+            Solutions Architect roles, combining hands-on engineering with
+            broader system-level thinking.
+          </p>
+          <div className='h-[40px]' aria-hidden='true'></div>
+          <p className='  inline shadow-[0_0_10px_2px_rgba(250,246,241,0.8)] px-1'>
             Beyond code, I'm entrepreneurial — constantly thinking about
             monetization strategies, local Nigerian market fit, and building
             digital products that solve real problems. I also care about
