@@ -26,6 +26,7 @@ const Hero = () => {
             to deliver end-to-end solutions with a strong emphasis on clean
             architecture, data consistency, and performance. Based in Nigeria.
           </p>
+          <br />
           <p className='inline shadow-[0_0_10px_2px_rgba(250,246,241,0.8)] px-1'>
             Strong systems design fundamentals focused on reliable, secure
             applications with clear service boundaries and data consistency.
