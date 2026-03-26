@@ -1,0 +1,31 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;display=swap');
+      
+      .title {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 84px;
+        font-weight: 700;
+        fill: #1a1a1a;
+      }
+      
+      .tagline {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 36px;
+        font-weight: 400;
+        fill: #4a4a4a;
+      }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#faf6f1"/>
+  
+  <!-- Title -->
+  <text x="600" y="280" text-anchor="middle" class="title">Varletint</text>
+  
+  <!-- Tagline -->
+  <text x="600" y="360" text-anchor="middle" class="tagline">Backend &amp; Full-Stack</text>
+  <text x="600" y="410" text-anchor="middle" class="tagline">Software Engineer</text>
+</svg>

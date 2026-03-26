@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OG Image Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet" />
+    <style>
+      body {
+        margin: 0;
+        padding: 20px;
+        font-family: "Montserrat", sans-serif;
+        background: #333;
+      }
+
+      #og-image {
+        width: 1200px;
+        height: 630px;
+        background: #faf6f1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 15px;
+        box-sizing: border-box;
+        margin: 0 auto;
+      }
+
+      .title {
+        font-size: 84px;
+        font-weight: 700;
+        color: #1a1a1a;
+        margin: 0 0 20px 0;
+        line-height: 1.2;
+      }
+
+      .tagline {
+        font-size: 36px;
+        font-weight: 400;
+        color: #4a4a4a;
+        margin: 0;
+        line-height: 1.4;
+        max-width: 900px;
+      }
+
+      .instructions {
+        color: white;
+        margin-top: 20px;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .instructions h2 {
+        margin-top: 30px;
+      }
+
+      .instructions code {
+        background: #555;
+        padding: 2px 6px;
+        border-radius: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="og-image">
+      <h1 class="title">Varletint</h1>
+      <p class="tagline">Backend & Full-Stack Software Engineer</p>
+    </div>
+
+    <div class="instructions">
+      <h2>Instructions to Generate OG Image:</h2>
+      <ol>
+        <li>Open this HTML file in a browser (Chrome recommended)</li>
+        <li>Right-click on the colored rectangle above</li>
+        <li>Select "Inspect" or "Inspect Element"</li>
+        <li>
+          In DevTools, right-click on the
+          <code>&lt;div id="og-image"&gt;</code> element
+        </li>
+        <li>
+          Select "Capture node screenshot" (Chrome) or use a screenshot tool
+        </li>
+        <li>Save the image as <code>og-image.png</code></li>
+        <li>Move the file to <code>/public/og-image.png</code></li>
+      </ol>
+
+      <h2>Alternative Method - Using Browser Screenshot:</h2>
+      <ol>
+        <li>
+          Use a browser extension or online tool to capture the exact dimensions
+        </li>
+        <li>
+          Recommended tools:
+          <ul>
+            <li>Chrome DevTools (Capture node screenshot)</li>
+            <li>Firefox Screenshot tool</li>
+            <li>
+              Online:
+              <a href="https://www.figma.com" style="color: #6cf">Figma</a>
+              (free)
+            </li>
+            <li>
+              Online:
+              <a href="https://www.canva.com" style="color: #6cf">Canva</a>
+              (free)
+            </li>
+          </ul>
+        </li>
+      </ol>
+
+      <h2>Verification:</h2>
+      <ul>
+        <li>Image dimensions: 1200x630 pixels</li>
+        <li>Background color: #faf6f1</li>
+        <li>File size: Should be under 500KB</li>
+        <li>Format: PNG</li>
+      </ul>
+    </div>
+  </body>
+</html>
